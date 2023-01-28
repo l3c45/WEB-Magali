@@ -1,6 +1,9 @@
 import { BsInstagram, BsWhatsapp, BsFacebook } from "react-icons/bs";
 import { BiLocationPlus } from "react-icons/bi";
-const Contact = () => {
+import { FC } from "react";
+
+const Contact:FC = () => {
+  
   return (
     <section id="reserve" className="contact__container">
       <h3>Reserva tu turno!</h3>
@@ -24,6 +27,7 @@ const Contact = () => {
         <h4>Donde nos podes encontrar ?</h4>
         <div className="contact__contact">
           <iframe
+          className="animate__animated "
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.947560127187!2d-58.703766764373015!3d-34.47885454010155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca3bb8d406d17%3A0xdcebbecb9d240389!2sSal%C3%B3n%20de%20Belleza%20magali!5e0!3m2!1ses!2sar!4v1674861939552!5m2!1ses!2sar"
             width="600"
             height="450"
@@ -33,7 +37,7 @@ const Contact = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
 
-          <div>
+          <div className="animate__animated ">
             <span>
               <BsInstagram />
               <a

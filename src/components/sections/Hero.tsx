@@ -1,6 +1,7 @@
 import { FC } from "react";
 
 const Hero: FC = () => {
+  
   return (
     <div id="home" className="hero__container">
       <div className="hero__image">

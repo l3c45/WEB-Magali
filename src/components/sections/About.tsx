@@ -1,4 +1,7 @@
-const About = () => {
+import { FC } from "react";
+
+const About:FC = () => {
+  
   return (
     <section id="about" className="about__container">
       <h3>Ocuparse de estar bien Y verse bien</h3>

@@ -1,15 +1,14 @@
 .hero__container {
-  height:100vh;// calc(100vh - 80px);
+  height: 100vh; // calc(100vh - 80px);
 }
 
 .hero__image {
-  background-image: url("https://i.postimg.cc/37cZZdm5/1.jpg");
+  background-image: url("/public/hero.jpg"); //("https://i.postimg.cc/37cZZdm5/1.jpg");
   background-size: cover;
   height: 100vh; //calc(100vh - 80px);
-  width: 100vw;
   display: flex;
- justify-content: center;
- padding-left: 6rem;
+  justify-content: center;
+  padding-left: 6rem;
 
   flex-direction: column;
 
@@ -21,5 +20,16 @@
     font-weight: bold;
     font-size: 8rem;
     color: $text;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .hero__image {
+    align-items: center;
+    padding-left: 1rem;
+  }
+
+  .hero__container {
+    width: 360px;
   }
 }

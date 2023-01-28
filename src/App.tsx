@@ -4,21 +4,25 @@ import Footer from "./components/sections/Footer";
 import Hero from "./components/sections/Hero";
 import NavBar from "./components/sections/NavBar";
 import Services from "./components/sections/Services";
+import useNav from "./hooks/useNav";
 
-function App() {
+
+
+const App = () => {
+  const [showNav]=useNav()
+  
+
   return (
-    <div className="app">
-      <NavBar></NavBar>
-      <main className="container">
-        <Hero></Hero>
-        
+    <>
+      {showNav ? <NavBar></NavBar> : null}
+    
+          <Hero></Hero> 
         <About></About>
         <Services></Services>
-        <Contact></Contact>
+        <Contact></Contact>  
         <Footer></Footer>
-      </main>
-    </div>
+    </>
   );
-}
+};
 
 export default App;

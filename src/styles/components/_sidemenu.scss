@@ -1,0 +1,70 @@
+
+
+  
+  .side__overlay {
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+  }
+  
+  .side__sidemenu {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    h1 {
+      font-weight: bold;
+      font-size: 6rem;
+      color: $text;
+      margin-bottom: 2rem;
+    }
+  
+    ul {
+      flex: 1;
+      list-style: none;
+      font-size: 2rem;
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+  
+      li {
+        a {
+          color: $text;
+          text-decoration: none;
+  
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+    hr {
+     
+      margin: 1rem 0;
+      width: 90%;
+      border: 1px solid black
+    }
+  }
+  
+  .side__sidemenu-social {
+    a {
+      color: $text;
+  
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  
+  

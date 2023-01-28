@@ -7,11 +7,10 @@
 @import "./components/about";
 @import "./components/contact";
 @import "./components/footer";
+@import "./components/sidemenu";
 
 body {
-  overflow-x: hidden;
   background-color: $bg;
 }
-
 
 

@@ -6,21 +6,18 @@ import NavBar from "./components/sections/NavBar";
 import Services from "./components/sections/Services";
 import useNav from "./hooks/useNav";
 
-
-
 const App = () => {
-  const [showNav]=useNav()
-  
+  const [showNav] = useNav();
 
   return (
     <>
       {showNav ? <NavBar></NavBar> : null}
-    
-          <Hero></Hero> 
-        <About></About>
-        <Services></Services>
-        <Contact></Contact>  
-        <Footer></Footer>
+
+      <Hero></Hero>
+      <About></About>
+      <Services></Services>
+      <Contact></Contact>
+      <Footer></Footer>
     </>
   );
 };

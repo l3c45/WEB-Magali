@@ -4,17 +4,16 @@ import { BiMenu } from "react-icons/bi";
 import useMenu from "../../hooks/useMenu";
 import SideMenu from "../SideMenu";
 
-
-
 const NavBar: FC = () => {
-  const {isOpenMenu,handleMenu}=useMenu()
+  const { isOpenMenu, handleMenu } = useMenu();
 
   return (
     <header>
-      {isOpenMenu? <SideMenu></SideMenu>:null}
-      <nav 
-      style={{ display: `${isOpenMenu ? "none" : "flex"}` }}
-      className="navbar__header animate__animated animate__fadeInDown ">
+      {isOpenMenu ? <SideMenu toggle={handleMenu}></SideMenu> : null}
+      <nav
+        style={{ display: `${isOpenMenu ? "none" : "flex"}` }}
+        className="navbar__header animate__animated animate__fadeInDown "
+      >
         <div className="navbar__logo"></div>
         <BiMenu onClick={handleMenu} className="navbar__menu" />
 

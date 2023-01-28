@@ -1,32 +1,37 @@
 import { FC } from "react";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
-import useMenu from "../hooks/useMenu";
 
+type Props = {
+  toggle: () => void;
+};
 
-
-const SideMenu:FC = () => {
-
-    const {handleMenu}=useMenu()
-    
+const SideMenu: FC<Props> = ({ toggle }) => {
   return (
     <div
-       // style={{ display: `${isOpenMenu ? "inline" : "none"}` }}
-        className="side__overlay animate_animated animate__slideInRight"
-      >
-        <aside className="side__sidemenu ">
-
+      // style={{ display: `${isOpenMenu ? "inline" : "none"}` }}
+     onClick={toggle}
+      className="side__overlay animate_animated animate__slideInRight"
+    >
+      <aside 
+      onClick={(e)=>e.stopPropagation()}
+      className="side__sidemenu ">
         <h1> Magali</h1>
 
         <ul>
-        
           <li>
-            <a onClick={handleMenu} href="#services">Servicios</a>
+            <a onClick={toggle} href="#services">
+              Servicios
+            </a>
           </li>
           <li>
-            <a onClick={handleMenu} href="#about">Conocenos</a>
+            <a onClick={toggle} href="#about">
+              Conocenos
+            </a>
           </li>
           <li>
-            <a  onClick={handleMenu} href="#reserve">Reservas</a>
+            <a onClick={toggle} href="#reserve">
+              Reservas
+            </a>
           </li>
         </ul>
 
@@ -46,10 +51,9 @@ const SideMenu:FC = () => {
             <BsWhatsapp size={50} style={{ margin: " 30px" }} />
           </a>
         </div>
+      </aside>
+    </div>
+  );
+};
 
-        </aside>
-      </div>
-  )
-}
-
-export default SideMenu
+export default SideMenu;

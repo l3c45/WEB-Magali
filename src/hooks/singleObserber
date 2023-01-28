@@ -1,0 +1,31 @@
+  // const [isVisible, setIsVisible] = useState(false)
+
+  // const element=useRef<HTMLElement| null>(null)
+
+  // const cb=(entries :IntersectionObserverEntry[])=>{
+
+  //   entries.forEach((entry) => {
+  //     if (entry.isIntersecting) {
+  //       setIsVisible(true);
+  //     } else {
+  //       setIsVisible(false);
+  //     }
+  //   });
+  // }
+
+  // const options={
+  //   root:null,
+  //   rootMargin:"0px",
+  //   threshold:1.0
+  // }
+
+  // useEffect(() => {
+
+  //   const obserber=new IntersectionObserver(cb,options)
+  //   if(element.current) obserber.observe(element.current)
+
+  //   return () => {
+  //     obserber.disconnect()
+  //   //  if(element.current) obserber.unobserve(element.current)
+  //   }
+  // }, [element,options])

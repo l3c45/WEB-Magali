@@ -1,5 +1,6 @@
 .services__container {
- 
+  background: rgb(255,245,228);
+background: linear-gradient(90deg, rgba(255,245,228,1) 2%, rgba(255,209,209,1) 32%, rgba(255,209,209,1) 74%, rgba(255,245,228,1) 96%); 
   display: grid;
   justify-content: center;
   padding: 2rem;

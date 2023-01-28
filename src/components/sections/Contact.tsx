@@ -1,8 +1,14 @@
 import { BsInstagram, BsWhatsapp, BsFacebook } from "react-icons/bs";
 import { BiLocationPlus } from "react-icons/bi";
-import { FC } from "react";
+import { FC, useRef } from "react";
+import useObserver from "../../hooks/useObserver";
 
 const Contact:FC = () => {
+
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+
+  const observedElements = useObserver([leftRef,rightRef]);
   
   return (
     <section id="reserve" className="contact__container">
@@ -27,7 +33,10 @@ const Contact:FC = () => {
         <h4>Donde nos podes encontrar ?</h4>
         <div className="contact__contact">
           <iframe
-          className="animate__animated "
+
+          data-ref="left"
+          ref={leftRef}
+          className={observedElements.left?.isInView?"animate__animated animate__slideInLeft " :""}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.947560127187!2d-58.703766764373015!3d-34.47885454010155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca3bb8d406d17%3A0xdcebbecb9d240389!2sSal%C3%B3n%20de%20Belleza%20magali!5e0!3m2!1ses!2sar!4v1674861939552!5m2!1ses!2sar"
             width="600"
             height="450"
@@ -37,7 +46,12 @@ const Contact:FC = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
 
-          <div className="animate__animated ">
+          <div 
+          data-ref="right"
+               ref={rightRef}
+               className={observedElements.left?.isInView?"animate__animated animate__slideInRight " :""}
+          
+          >
             <span>
               <BsInstagram />
               <a

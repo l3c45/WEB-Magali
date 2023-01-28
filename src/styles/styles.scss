@@ -1,0 +1,17 @@
+@import "./base/base";
+@import "./base/config";
+
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/services";
+@import "./components/about";
+@import "./components/contact";
+@import "./components/footer";
+
+body {
+  overflow-x: hidden;
+  background-color: $bg;
+}
+
+
+

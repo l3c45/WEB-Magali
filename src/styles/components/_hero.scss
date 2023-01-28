@@ -1,0 +1,25 @@
+.hero__container {
+  height:100vh;// calc(100vh - 80px);
+}
+
+.hero__image {
+  background-image: url("https://i.postimg.cc/37cZZdm5/1.jpg");
+  background-size: cover;
+  height: 100vh; //calc(100vh - 80px);
+  width: 100vw;
+  display: flex;
+ justify-content: center;
+ padding-left: 6rem;
+
+  flex-direction: column;
+
+  span {
+    font-size: 4rem;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 8rem;
+    color: $text;
+  }
+}

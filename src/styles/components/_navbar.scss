@@ -1,0 +1,54 @@
+.navbar__header {
+  position: fixed;
+  background-color: $primary;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+
+
+  nav {
+    
+    ul {
+      list-style: none;
+      font-size: large;
+      gap: 2rem;
+      display: flex;
+      justify-content: center;
+
+      li:hover {
+        color: $secondary;
+
+        a {
+          color: $text;
+          text-decoration: none;
+      
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.navbar__logo {
+  width: 80px ;
+  height: 80px;
+  border: 2px solid black;
+}
+
+.navbar__reserve {
+ 
+    a {
+      color: $text;
+  
+      &:hover {
+        color: $secondary;
+      }
+    }
+
+}

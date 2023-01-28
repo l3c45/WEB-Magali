@@ -1,0 +1,21 @@
+.footer__container {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    padding:0.2rem ;
+
+    a{
+      text-decoration: none;
+      font-weight: bold;
+      color:$text;
+      &:hover {
+        color: $primary;
+      }
+      
+    }
+  }
+}

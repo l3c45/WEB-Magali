@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`Testing entire App > Should render title  1`] = `
+<h1>
+   Magali
+</h1>
+`;

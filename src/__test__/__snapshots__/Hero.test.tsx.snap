@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`Testing Hero Component > Should render title  1`] = `
+<h1>
+   Magali
+</h1>
+`;

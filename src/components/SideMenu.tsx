@@ -13,6 +13,7 @@ const SideMenu: FC<Props> = ({ toggle }) => {
       className="side__overlay animate_animated animate__slideInRight"
     >
       <aside 
+      role={"slider"}
       onClick={(e)=>e.stopPropagation()}
       className="side__sidemenu ">
         <h1> Magali</h1>

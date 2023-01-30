@@ -6,7 +6,7 @@ const Services: FC = () => {
     <section id="services" className="services__container">
       {services.map((item) => {
         return (
-          <article key={item.id} >
+          <article  key={item.id} >
             <h3>{item.title} </h3>
             <img alt={item.title} src={item.img}></img>
           </article>

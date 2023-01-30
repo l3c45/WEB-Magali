@@ -14,7 +14,7 @@ const Footer: FC = () => {
         className={observedElements.footer?.isInView ? "animate__animated animate__heartBeat" : ""}
       >
 
-        Devloped by
+        Developed by
         <a href="https://lucas-porfolio.vercel.app/" target={"_blank"}>
           Zarate Lucas
         </a>

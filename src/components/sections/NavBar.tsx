@@ -11,11 +11,12 @@ const NavBar: FC = () => {
     <header>
       {isOpenMenu ? <SideMenu toggle={handleMenu}></SideMenu> : null}
       <nav
+      role={"navigation"}
         style={{ display: `${isOpenMenu ? "none" : "flex"}` }}
         className="navbar__header animate__animated animate__fadeInDown "
       >
         <div className="navbar__logo"></div>
-        <BiMenu onClick={handleMenu} className="navbar__menu" />
+        <BiMenu role={"button"} onClick={handleMenu} className="navbar__menu" />
 
         <ul>
           <li>

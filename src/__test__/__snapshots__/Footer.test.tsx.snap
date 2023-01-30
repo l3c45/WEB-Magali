@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`Testing Footer Component > Should render author name  1`] = `
+<a
+  href="https://lucas-porfolio.vercel.app/"
+  target="_blank"
+>
+  Zarate Lucas
+</a>
+`;
